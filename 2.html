@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo CSS</title>
+    <style>
+        <style>
+        /* Regra CSS básica */
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Pseudo-classe */
+        button:hover {
+            background-color: green;
+        }
+
+        /* Pseudo-elemento */
+        button::after {
+            content: " ✔";
+        }
+
+        /* Animação */
+        @keyframes mudarCor {
+            from {
+                background-color: blue;
+            }
+            to {
+                background-color: red;
+            }
+        }
+
+        /* Aplicando animação */
+        button {
+            animation: mudarCor 2s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de CSS</h1>
+    </header>
+
+    <main>
+        <p>
+            Este botão utiliza CSS com pseudo-classe, pseudo-elemento e animação.
+        </p>
+
+        <button>Clique aqui</button>
+    </main>
+
+    <footer>
+        <p>Exemplo educacional</p>
+    </footer>
+
+</body>
+</html>
