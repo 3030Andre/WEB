@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeiras com CSS</title>
+</head>
+<body>
+    <!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.flag { width: 300px; height: 200px; margin: 20px; }
+
+/* França */
+.fr { display: flex; }
+.fr div { flex: 1; }
+.azul { background: blue; }
+.branco { background: white; }
+.vermelho { background: red; }
+
+/* Alemanha */
+.de { display: flex; flex-direction: column; }
+.de div { flex: 1; }
+.preto { background: black; }
+.amarelo { background: gold; }
+
+/* Japão */
+.jp {
+background: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.bola {
+width: 80px;
+height: 80px;
+background: red;
+border-radius: 50%;
+} </style>
+
+</head>
+
+<body>
+
+<div class="flag fr">
+  <div class="azul"></div>
+  <div class="branco"></div>
+  <div class="vermelho"></div>
+</div>
+
+<div class="flag de">
+  <div class="preto"></div>
+  <div class="vermelho"></div>
+  <div class="amarelo"></div>
+</div>
+
+<div class="flag jp">
+  <div class="bola"></div>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
