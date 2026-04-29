@@ -1,20 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    .container{
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      grid-gap: 10px;
+      grid-template-areas:
+       "laranja laranja   rosa       rosa      bege   bege"
+       "azul    azul      rosa       rosa      verde bolinhas"
+       "laranjac  laranjac laranjac laranjac   verde bolinhas  "
+      
+     }
+
+
+    .boxa{
+      background-color: orange;
+      grid-area: laranja;
+    }
+    .boxb { grid-area: bege; 
+      background-color: burlywood;
+    }
+    .boxc { grid-area: azul;
+       background-color: blue;
+    }
+    .boxd { grid-area: rosa;
+    background-color: pink; }
+     
+    .boxe{
+       grid-area: verde;
+        background-color:  green;
+    }
+    .boxf{
+      grid-area: laranjac;
+      background-color:  rgb(241, 173, 46);
+    }
+
+   /* coluna das bolinhas */
+  .boxg{
+  grid-area: bolinhas;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+   .bolinha{
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    border-radius: 50%;
+   }
+   #bolinha1{
+    background-color: orange;
+   }
+   
+   #bolinha2{
+    background-color: antiquewhite;
+   }
+   #bolinha3{
+    background-color: green ;
+   }
+   #bolinha4{
+    background-color:purple;
+   }
+  </style>
     <meta charset="UTF-8">
      <title>Layout Responsivo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-    <div class="box a"></div>
-    <div class="box b"></div>
-    <div class="box c"></div>
-    <div class="box d"></div>
-    <div class="box e"></div>
-    <div class="box f"></div>
+      <div class="boxa"></div>
+      <div class="boxb"></div>
+      <div class="boxc"></div>
+      <div class="boxd"></div>
+      <div class="boxe"></div>
+      <div class="boxf"></div>
+      <div class="boxg">
+          <div class="bolinha" id="bolinha1"></div>
+          <div class="bolinha" id="bolinha2"></div>
+          <div class="bolinha" id="bolinha3"></div>
+          <div class="bolinha" id="bolinha4"></div>
+
+      </div>
+    </div>
 </body>
- margin: 0;
-  height: 100vh;
+ 
 
 </html>
