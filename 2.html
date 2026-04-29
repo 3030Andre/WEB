@@ -6,57 +6,68 @@
     <title>Exemplo CSS</title>
     <style>
         <style>
-        /* Regra CSS básica */
-        button {
-            background-color: blue;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
+        <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Estrutura e Sintaxe</title>
+
+    <style>
+        /* Regra CSS */
+        p {
+            color: blue;
+            font-size: 16px;
         }
 
         /* Pseudo-classe */
         button:hover {
             background-color: green;
+            color: white;
         }
 
         /* Pseudo-elemento */
-        button::after {
-            content: " ✔";
+        p::first-letter {
+            font-size: 24px;
+            font-weight: bold;
         }
 
         /* Animação */
         @keyframes mudarCor {
             from {
-                background-color: blue;
+                background-color: red;
             }
             to {
-                background-color: red;
+                background-color: yellow;
             }
         }
 
-        /* Aplicando animação */
-        button {
+        .animacao {
             animation: mudarCor 2s infinite alternate;
+            padding: 10px;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Exemplo de CSS</h1>
-    </header>
 
-    <main>
-        <p>
-            Este botão utiliza CSS com pseudo-classe, pseudo-elemento e animação.
-        </p>
+    <h1>Estrutura do CSS</h1>
 
-        <button>Clique aqui</button>
-    </main>
+    <p>
+        Uma regra CSS é composta por um seletor e um bloco de declarações.
+        Dentro desse bloco existem propriedades e valores.
+    </p>
 
-    <footer>
-        <p>Exemplo educacional</p>
-    </footer>
+    <p>
+        Exemplo: o seletor é "p", a propriedade é "color" e o valor é "blue".
+    </p>
+
+    <button class="animacao">Passe o mouse aqui</button>
+
+</body>
+</html>
+   
+
+    
 
 </body>
 </html>
