@@ -1,68 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bandeiras com CSS</title>
-</head>
-<body>
-    <!DOCTYPE html>
 
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<title>Bandeiras Simples</title>
 <style>
-.flag { width: 300px; height: 200px; margin: 20px; }
+  
+/* Bandeira França */
+.franca { width: 300px; height: 200px; }
+.franca .azul { float: left; width: 100px; height: 200px; background: blue; }
+.franca .branco { float: left; width: 100px; height: 200px; background: white; }
+.franca .vermelho { float: left; width: 100px; height: 200px; background: red; }
 
-/* França */
-.fr { display: flex; }
-.fr div { flex: 1; }
-.azul { background: blue; }
-.branco { background: white; }
-.vermelho { background: red; }
+/* Bandeira Alemanha */
+.alemanha { width: 300px; height: 200px; }
+.alemanha .preto { width: 300px; height: 66px; background: black; }
+.alemanha .vermelho { width: 300px; height: 66px; background: red; }
+.alemanha .amarelo { width: 300px; height: 68px; background: gold; }
 
-/* Alemanha */
-.de { display: flex; flex-direction: column; }
-.de div { flex: 1; }
-.preto { background: black; }
-.amarelo { background: gold; }
-
-/* Japão */
-.jp {
-background: white;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.bola {
-width: 80px;
-height: 80px;
-background: red;
-border-radius: 50%;
-} </style>
-
+/* Bandeira Japão */
+.japao { width: 300px; height: 200px; background: white; position: relative; }
+.japao .bola { width: 80px; height: 80px; background: red; border-radius: 50%; position: absolute; top: 60px; left: 110px; }
+</style>
 </head>
-
 <body>
 
-<div class="flag fr">
+<!-- França -->
+<div class="franca">
   <div class="azul"></div>
   <div class="branco"></div>
   <div class="vermelho"></div>
 </div>
 
-<div class="flag de">
+<!-- Alemanha -->
+<div class="alemanha">
   <div class="preto"></div>
   <div class="vermelho"></div>
   <div class="amarelo"></div>
 </div>
 
-<div class="flag jp">
+<!-- Japão -->
+<div class="japao">
   <div class="bola"></div>
 </div>
-
-</body>
-</html>
 
 </body>
 </html>
