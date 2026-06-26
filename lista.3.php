@@ -1,9 +1,7 @@
-<<?php
-
-function hello(){
+<?php
+function hello() {
     echo "Hello";
 }
 
-hello();
-
+hello(); //chamada de função
 ?>

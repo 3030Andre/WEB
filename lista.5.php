@@ -1,18 +1,29 @@
 <
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sorteio de Número</title>
+</head>
+<body>
+
 <form method="post">
-    Início: <input type="number" name="n1"><br>
-    Fim: <input type="number" name="n2"><br>
-    <input type="submit">
+    Informe o número máximo:
+    <input type="number" name="numero" required>
+    <input type="submit" value="Sortear">
 </form>
 
 <?php
+if (isset($_POST["numero"])) {
 
-if(isset($_POST['n1'])){
+    $numero = $_POST["numero"];
+    $sorteio = rand(1, $numero);
 
-    $n1 = $_POST['n1'];
-    $n2 = $_POST['n2'];
+    echo "Número informado: " . $numero . "<br>";
+    echo "Número sorteado: " . $sorteio;
 
-    echo rand($n1,$n2);
 }
-
 ?>
+
+</body>
+</html>
